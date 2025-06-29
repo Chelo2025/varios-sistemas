@@ -8,24 +8,34 @@ Fue ejecutado en **servidores Debian 12 sin entorno gráfico**.
 
 ## 🚀 ¿Qué hace este script?
 
-🔍 Detecta automáticamente la distribución Linux.
+🔍 Detecta automáticamente la distribución Linux (solo para algunas distribuciones)
+
 🔄 Ejecuta actualizaciones del sistema según el gestor de paquetes compatible.
+
 🧾 Genera informes ".txt" por fecha con lo que se actualizó y cambios recientes en "/etc".
+
 ♻️ Conserva los últimos 10 informes automáticamente.
+
 ⏰ Pensado para ejecutarse desde "cron" todos los sábados.
 
 ## 💻 Probado en
 
- ✅ Debian 12 (sin interfaz gráfica)
+✅ Debian 12 (sin interfaz gráfica)
+
 Acceso como **usuario root**
+
 También compatible con:
+
 Ubuntu
+
 CentOS 7 / RHEL (usa "yum")
+
 CentOS 8 / Fedora / RHEL moderno (usa "dnf")
+
 Arch Linux
 
 
-## 🛠️ Instalación y uso (seguimos como usuario root)
+## 🛠️ Instalación y uso
 
 ### 1. Actualizar paquetes e instalar Git 
 apt update && apt install git -y
@@ -61,18 +71,25 @@ cat /var/log/mis_actualizaciones/actualizaciones_28-jun-25.txt
 ## 📋 Salida esperada del script
 
 Informe de Actualizaciones - 28-jun-25
+
 Distribución detectada: debian
+
 -------------------------------------------
+
 Actualizando índices de paquetes.
+
 ...
 
 Actualizaciones disponibles:
+
 ...
 
 Aplicando actualizaciones.
+
 ...
 
 Archivos modificados en /etc (últimas 24h):
+
 ...
 
 
