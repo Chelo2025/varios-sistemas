@@ -54,6 +54,9 @@ Agregar esta línea (puede ser al final)
 
 0 2 * * 6 /usr/local/bin/actualizaciones.sh
 
+### 6. Ver archivo generado (según la fecha)
+
+cat /var/log/mis_actualizaciones/actualizaciones_28-jun-25.txt
 
 ## 📋 Salida esperada del script
 
